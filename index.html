@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Kalam:wght@300;700&family=Roboto+Condensed:wght@300&family=Young+Serif&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+
+<section id="banner">
+    <nav>
+        <img src="images/img1.png" class="pic">
+        <div class="banner-text">
+            <h2>PORTFOLIO</h2>
+            <h3>ALAN JOSE</h3>
+            <div class="banner-btn">
+                <a href="https://www.linkedin.com/in/alan-jose-5b7354227/" target="_blank"><span></span>Linkedin</a>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#banner">About</a></li>
+            <li><a href="#feature">Skills</a></li>
+            <li><a href="#service">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="menuBtn">
+    <img src="images/menu.png" id="menu">
+</div>
+
+<section id="feature">
+    <div class="title-text">
+        <h1>SKILLS</h1>
+    </div>
+    <div class="container">
+        <section id="skills">
+            </div>
+            <div class="container">
+                <div class="tile">
+                    <h2>React</h2>
+                    <p>I excel in building dynamic user interfaces using React, a popular JavaScript library for building user interfaces.</p>
+                </div>
+                <div class="tile">
+                    <h2>HTML & CSS</h2>
+                    <p>Proficient in creating responsive layouts and stylish designs using HTML and CSS for modern web pages.</p>
+                </div>
+                <div class="tile">
+                    <h2>Python</h2>
+                    <p>Skilled in Python programming, covering a wide range of applications from web development to data analysis.</p>
+                </div>
+                <div class="tile">
+                    <h2>JavaScript</h2>
+                    <p>Strong understanding of JavaScript, enabling me to create interactive and dynamic web experiences.</p>
+                </div>
+                <div class="tile">
+                    <h2>C</h2>
+                    <p>Proficient in the C programming language, with experience in systems programming and algorithm development.</p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</section>
+<section id="service">
+    <div class="title-text">
+        <h1>Contact</h1>
+    </div>
+    <div class="service-box">
+        <div class="contact-info">
+            <p>Email: alanjoseaj123@gmail.com</p>
+            <p>Phone: 949-720-4867</p>
+        </div>
+        <div class="contact-tile">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your message" name="message" rows="4" required></textarea>
+
+            <input  type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+        
+    </div>
+</section>
+
+
+
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px"
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src= "images/close.png";
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menu.src= "images/menu.png";
+        }
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+    });
+</script>
+
+</body>
+</html>
+
+
